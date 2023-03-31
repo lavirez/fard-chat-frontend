@@ -4,21 +4,19 @@ import { MagnifyingGlassIcon, PlusIcon } from '@heroicons/vue/20/solid'
 const people = [
   {
     name: 'Calvin Hawkins',
-    email: 'calvin.hawkins@example.com',
+    email: 'Thanks for your time',
     image:
-      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
     name: 'Kristen Ramos',
-    email: 'kristen.ramos@example.com',
-    image:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    email: 'I just removed the items',
+    image:"https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
     name: 'Ted Fox',
-    email: 'ted.fox@example.com',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    email: 'No problem',
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
 ]
 </script>

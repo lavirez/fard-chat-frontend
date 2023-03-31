@@ -8,7 +8,6 @@ import { RouterLink, RouterView } from 'vue-router';
         <RouterLink to="/chat"> Chat </RouterLink>
     </nav>
     <RouterView />
-    <h3> This is going to stick Around </h3>
 </template>
 
 <style scoped>
