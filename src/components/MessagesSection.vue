@@ -1,67 +1,27 @@
 <script lang="ts" setup>
 import MessageBubble from "./MessageBubble.vue";
+import type { Chat } from "@/types/chat";
+import ChatBar from "@/components/ChatBar.vue";
+import ChatTopBar from "@/components/ChatTopBar.vue";
 
-const props = defineProps({
-    chat: Object,
-});
+const props = defineProps<{
+  chat: Chat
+}>()
+
 </script>
 
 <template>
-    <div class="flex flex-col space-y-4">
-        <div v-if="chat === undefined or null" class="">
-            <p class="text-bold" > Select a Conversation or <span class="text-bold hover:text-white text-black"> Start One </span></p>
-        </div>
-        <div :class="'chat' message.self 'chat-end' : 'chat-start'" v-for="message in chat.messages" v-else>
-            <MessageBubble v-for="message in chat.messages" />
-        </div>
+    <div class="flex flex-col space-y-4 h-screen">
+        <ChatTopBar />
+        <div class="flex flex-col overflow-y-auto">
+            <div v-if="props.chat === undefined || null" class="">
+                <p class="text-bold" > Select a Conversation or <span class="text-bold hover:text-white text-black"> Start One </span></p>
+            </div>
+            <div  :class="`chat ${message.self? 'chat-end': 'chat-start'}`" v-for="(message, index) in props.chat.messages" :key="index" v-else>
+                <MessageBubble :message="message"/>
+            </div>
+        </div> 
+        <ChatBar />
     </div>
 </template>
 
-<style scoped>
-.chat {
-  &-bubble {
-    @apply rounded-box;
-    min-height: 2.75rem;
-    min-width: 2.75rem;
-    /* default */
-    & {
-      @apply bg-neutral text-neutral-content;
-    }
-    /* brand colors */
-    &-primary {
-      @apply bg-primary text-primary-content;
-    }
-    &-secondary {
-      @apply bg-secondary text-secondary-content;
-    }
-    &-accent {
-      @apply bg-accent text-accent-content;
-    }
-    /* state colors */
-    &-info {
-      @apply bg-info text-info-content;
-    }
-    &-success {
-      @apply bg-success text-success-content;
-    }
-    &-warning {
-      @apply bg-warning text-warning-content;
-    }
-    &-error {
-      @apply bg-error text-error-content;
-    }
-  }
-  &-start .chat-bubble {
-    @apply rounded-bl-none;
-    &:before {
-      left: -0.75rem;
-    }
-  }
-  &-end .chat-bubble {
-    @apply rounded-br-none;
-    &:before {
-      left: 100%;
-    }
-  }
-}
-</style>

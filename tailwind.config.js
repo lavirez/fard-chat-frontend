@@ -5,6 +5,7 @@ module.exports = {
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     plugins: [
+        require("daisyui"),
         require('@tailwindcss/typography'),
         require("@tailwindcss/forms")({
             strategy: 'base', // only generate global styles
@@ -12,4 +13,14 @@ module.exports = {
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
     ],
+    daisyui: {
+        styled: true,
+        themes: true,
+        base: true,
+        utils: true,
+        logs: true,
+        rtl: false,
+        prefix: "",
+        darkTheme: "light",
+    },
 }
