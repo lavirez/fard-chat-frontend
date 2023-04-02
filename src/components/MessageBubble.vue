@@ -15,3 +15,4 @@ const props = defineProps<{
         <p v-else> seen </p>
     </div>
 </template>
+

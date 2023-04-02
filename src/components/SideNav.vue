@@ -67,21 +67,21 @@ const people = [
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
-    name: 'Ted Fox',
+    name: 'Mom',
     id: "11",
-    email: 'No problem',
+    email: 'Yes',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
-    name: 'Ted Fox',
+    name: 'Fox Jannet',
     id: "12",
-    email: 'No problem',
+    email: 'This is the greatest shit I ever heard',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
     id: "14",
-    name: 'Ted Fox',
-    email: 'No problem',
+    name: 'Travis Scott',
+    email: 'Hayy Hoo, In my fumes, ',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
@@ -91,21 +91,21 @@ const people = [
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
-    name: 'Ted Fox',
+    name: 'FireFox Agent',
     id: "15",
-    email: 'No problem',
+    email: 'Ay',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
-    name: 'Ted Fox',
+    name: 'Msihka',
     id: "15",
-    email: 'No problem',
+    email: 'Mewo',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
   {
-    name: 'Ted Fox',
+    name: 'Cpt. Holt',
     id: "15",
-    email: 'No problem',
+    email: 'Mip Borp Zirp',
     image: "https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg"
   },
 ]

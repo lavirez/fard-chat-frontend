@@ -24,34 +24,6 @@ const chat = {
             last: false,
         },
         {
-            content: "hello there",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "hello there",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "hello there",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "hello there",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
             content: "I am from Join Champet from so you can hell it to the next level of the projec",
             self: true,
             timstamp: "",
@@ -87,90 +59,6 @@ const chat = {
             last: false,
         },
         {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
-            content: "Jhon Champman",
-            self: true,
-            timstamp: "",
-            seen: true,
-            last: false,
-        },
-        {
             content: "thanks, I will be in touch with you",
             self: false,
             timstamp: "",
@@ -186,7 +74,7 @@ const chat = {
         <div class="w-16 bg-gray-200">
             <PrimaryNav />
         </div>
-        <div class="w-1/4  bg-gray-50 border-1 border-slate-500 rounded-lg shadow-lg">
+        <div class="lg:w-1/4 md:w-2/6 hidden md:block bg-gray-50 border-1 border-slate-500 rounded-lg shadow-lg">
             <SideNav />
         </div>
         <div class="flex flex-col flex-auto shadow-lg rounded-sm">
