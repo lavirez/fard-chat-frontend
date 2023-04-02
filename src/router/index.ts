@@ -22,7 +22,13 @@ const routes = [
     {
       path: '/chat/:id',
       name: 'chat-detail',
-      component: () => import('../views/ChatDetailView.vue')
+      component: () => import('../views/ChatView.vue')
+    },
+
+    {
+      path: '/chat/list',
+      name: 'chat-list',
+      component: () => import('../views/ChatListView.vue')
     },
 ];
 const router = createRouter({

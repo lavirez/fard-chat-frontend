@@ -1,32 +1,35 @@
 <script setup lang="ts">
+import { useRouter } from "vue-router";
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-import { PlusIcon } from '@heroicons/vue/20/solid'
+import { BellIcon } from '@heroicons/vue/24/outline'
+import { PlusIcon, ChevronLeftIcon } from '@heroicons/vue/20/solid'
+
+const router = useRouter();
+
+function goChatPage() {
+    router.push("/chat/list");
+}
 </script>
 
 <template>
-  <Disclosure as="nav" class="bg-white shadow" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-white shadow" >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 justify-between">
-        <div class="flex">
+        <div class="flex space-x-3">
           <div class="-ml-2 mr-2 flex items-center md:hidden">
             <!-- Mobile menu button -->
-            <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-              <span class="sr-only">Open main menu</span>
-              <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
-              <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
+            <DisclosureButton @click="goChatPage" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Go Back to Chat List</span>
+              <ChevronLeftIcon class="block h-6 w-6" aria-hidden="true" />
             </DisclosureButton>
           </div>
           <div class="flex flex-shrink-0 items-center">
-            <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
-            <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
+            <img class="block h-10 w-10 lg:hidden rounded-full" src="https://aui.atlassian.com/aui/latest/docs/images/avatar-person.svg" alt="Your Company" />
+            <img class="hidden h-10  w-10 lg:block rounded-full" src="https://aui.atlassian.com/aui/latest/docs/images/avatar-person.svg" alt="Your Company" />
           </div>
-          <div class="hidden md:ml-6 md:flex md:space-x-8">
-            <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-            <a href="#" class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">Dashboard</a>
-            <a href="#" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Team</a>
-            <a href="#" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Projects</a>
-            <a href="#" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Calendar</a>
+          <div class="flex flex-col mr-2 items-center">
+            <p class="text-gray-900 font-medium mt-3">Tim Burton </p>
+            <p class="text-gray-500 text-xs">is typing..</p>
           </div>
         </div>
         <div class="flex items-center">
@@ -35,14 +38,6 @@ import { PlusIcon } from '@heroicons/vue/20/solid'
               <PlusIcon class="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
               <span>New Job</span>
             </button>
-          </div>
-          <div class="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
-            <button type="button" class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-              <span class="sr-only">View notifications</span>
-              <BellIcon class="h-6 w-6" aria-hidden="true" />
-            </button>
-
-            <!-- Profile dropdown -->
           </div>
         </div>
       </div>
